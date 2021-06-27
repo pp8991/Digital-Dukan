@@ -20,5 +20,5 @@ app.use(express.json({
 
 app.use('/', require('./router/user'));
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, console.log(`server started, listening PORT ${PORT}`));
