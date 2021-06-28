@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const DB_URI = 'mongodb://localhost/Digital-Dukan';
+const DB_URI = 'mongodb://localhost/Bada-Business';
 
 mongoose.connect(DB_URI ,{
     useNewUrlParser: true,
