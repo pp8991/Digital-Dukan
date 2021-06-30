@@ -11,7 +11,7 @@ var engines = require('consolidate');
 app.set('views', __dirname + '/views');
 app.engine('html', engines.mustache);
 app.set('view engine', 'html');
-app.use(express.static('public'))
+app.use('/static', express.static('public'));
 
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json({
